@@ -1037,7 +1037,7 @@ display: none;
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: transparent;
+  background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1049,6 +1049,8 @@ flex-direction: column;
 padding: 20px;
 width: 500px;
 box-shadow: 0px 0px 20px 0px #222;
+background-color: #fff;
+opacity: 1;
 }
 
 .input-box{
@@ -1058,6 +1060,7 @@ box-shadow: 0px 0px 20px 0px #222;
   border-radius: 0;
   outline: none;
   border: 2px solid var(--secondary);
+  resize: none;
 }
 
 #feedback label{

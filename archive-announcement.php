@@ -104,11 +104,11 @@ $allPostsWPQuery = new WP_Query(array('post_type'=>'announcement', 'post_status'
 </main>
 <div class="feedback_form" id="feedback_form" style="display: none;">
     <form method="post" id="feedback" class="card">
-        <label for="user_name">Name</label>
+        <label for="user_name">Name *</label>
         <input type="text" name="user_name" id="user_name" class="input-box">
-        <label for="email">Email</label>
+        <label for="email">Email *</label>
         <input type="email" name="email" id="email" class="input-box">
-        <label for="feedback_area">Feedback</label>
+        <label for="feedback_area">Feedback *</label>
         <textarea name="feedback" id="feedback_area" cols="10" rows="2" class="input-box textarea"></textarea>
         <button type="button" class="button" id="submit">Submit</button>
     </form>
