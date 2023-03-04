@@ -899,9 +899,8 @@ color: var(--white);
     color: var(--white);
 }
 
-#announcement .post-categories li:before {
+#announcement .post-categories .cat-item::before {
     content: "";
-    background-color: #fcb900;
     display: block;
     width: 10px;
     height: 10px;

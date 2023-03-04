@@ -66,9 +66,9 @@ $allPostsWPQuery = new WP_Query(array('post_type'=>'announcement', 'post_status'
                     <ul class="post-categories">
                         <?php 
                         foreach (get_the_terms( $allPostsWPQuery->ID,'announcement-cat' ) as $cat) {
-                            echo '<li class="cat-'.count(get_the_category()).'"><a href="#">';
+                            echo '<li data-color="'.get_term_meta( $cat->term_id, 'cat_color', true).'" class="cat-item"><a href="#">';
                             echo $cat->name;
-                            echo "</a></li>";
+                            echo "</a></li>";                            
                         }
                         ?>
                     </ul>

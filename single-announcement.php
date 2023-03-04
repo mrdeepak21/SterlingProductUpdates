@@ -6,8 +6,8 @@ wp_enqueue_style( 'dashicons' );
 <main id="announcement">
     <section class="container announcements">
         <aside class="left">
-            <a class="d-flex" style="align-items: center;margin-left: -40px;" href="<?php echo home_url(); ?>/announcements/"><span class="dashicons dashicons-arrow-left-alt"></span>&nbsp;&nbsp; Back to all updates</a>
-            <p class="release_date">
+            <a class="d-flex mt-2" style="align-items: center;margin-left:-32px" href="<?php echo home_url(); ?>/announcements/"><span class="dashicons dashicons-arrow-left-alt"></span>&nbsp;&nbsp; Back to all updates</a>
+            <p class="release_date mt-1">
                 <b>Date:</b> <br>
                 <?php the_time(get_option('date_format')); ?>
                     </p>

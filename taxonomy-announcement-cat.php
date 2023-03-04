@@ -18,6 +18,7 @@ $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' 
 
     <section class="container announcements">
         <aside class="left">
+        <a class="d-flex mt-2" style="align-items: center;" href="<?php echo home_url(); ?>/announcements/"><span class="dashicons dashicons-arrow-left-alt"></span>&nbsp;&nbsp; Back to all updates</a>
             <div class="card mt-2 p-1 bg-primary">
                 <a href="javascript:void(0);" id="feedback_form_toggle">
                     <p>Have an idea or feature request?</p>
@@ -56,7 +57,7 @@ $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' 
                         <img src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>">
                     </a>
                     <?php } ?>
-                <h2 class="post-title px-2"><a href="<?php the_permalink(); ?>" rel="bookmark">
+                <h2 class="post-title px-2" style="margin-top: 1em;"><a href="<?php the_permalink(); ?>" rel="bookmark">
                         <?php the_title(); ?>
                     </a></h2>
                 <div class="px-2">
